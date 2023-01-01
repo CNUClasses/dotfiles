@@ -1,4 +1,4 @@
-jI suggest you create a fork of this, so you can modify it.
+I suggest you create a fork of this, so you can modify it.
 
 The approach used here is from https://developer.atlassian.com/blog/2016/02/best-way-to-store-dotfiles-git-bare-repo/
 
