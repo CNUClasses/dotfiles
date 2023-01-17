@@ -1,3 +1,5 @@
+#!/bin/bash
+
 #where the configuration files come from
 DOTFILES_URL=https://github.com/CNUClasses/dotfiles.git
 LOC=.cfg  #where config files go
@@ -22,6 +24,9 @@ done
 #add any aliases
 chmod 766 ~/$LOC/.bash_aliases 
 source ~/$LOC/.bash_aliases
+
+#add the following line to .bashrc so all subsequant terminal windows pick up aliases
+echo "source ~/$LOC/.bash_aliases">>~/.bashrc 
 
 #config git
 git config --global user.name "$NAME"
