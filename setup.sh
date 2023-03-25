@@ -28,6 +28,9 @@ source ~/$LOC/.bash_aliases
 #add the following line to .bashrc so all subsequant terminal windows pick up aliases
 echo "source ~/$LOC/.bash_aliases">>~/.bashrc 
 
+#and the following line so that all shells run .bashrc
+echo "source ~/.bashrc">>~/.bash_profile 
+
 #config git
 git config --global user.name "$NAME"
 git config --global user.email "$EMAIL"
